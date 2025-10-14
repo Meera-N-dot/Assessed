@@ -1,0 +1,142 @@
+/* General Body Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Main container for content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h1, h2 {
+    color: #1a253c;
+}
+
+/* --- Page 1: Student List --- */
+
+.controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#studentList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#studentList li {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#studentList li:last-child {
+    border-bottom: none;
+}
+
+#studentList a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#studentList a:hover {
+    text-decoration: underline;
+}
+
+#studentList span {
+    background-color: #e9ecef;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #495057;
+}
+
+/* --- Page 2: Student Detail --- */
+
+.student-header {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.student-header h1 {
+    margin: 0;
+}
+
+.student-header .block-info {
+    font-size: 18px;
+    color: #555;
+}
+
+.button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button-secondary {
+    background-color: #6c757d;
+}
+
+.button-secondary:hover {
+    background-color: #5a6268;
+}
+
+.ma-list {
+    margin-top: 20px;
+}
+
+.ma-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.ma-item label {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.ma-item select {
+    width: 200px;
+}
+
+.rubric-section {
+    margin-top: 40px;
+}

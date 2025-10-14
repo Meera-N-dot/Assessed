@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="button button-secondary" style="margin-bottom: 20px; display: inline-block;">&larr; Back to List</a>
+        
+        <div class="student-header">
+            <div>
+                <h1 id="studentName">Student Name</h1>
+                <div id="studentBlock" class="block-info">Block #</div>
+            </div>
+            <a id="googleDriveButton" href="#" target="_blank" class="button">Files</a>
+        </div>
+
+        <div class="ma-list">
+            <h2>Mastery Assessments</h2>
+            <div id="ma-container">
+                </div>
+        </div>
+
+        <div class="rubric-section">
+            <h2>Current Rubric</h2>
+            <canvas id="rubricChart"></canvas>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
