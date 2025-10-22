@@ -1,0 +1,6 @@
+Improvements/New Features: 
+Where the current display of the bar graph of rubric scores
+are should display the particular students overall rubric with all of the standards and students score displayed
+and should update on reload
+Then, below each MA title (where you can change the status of the reassesments) should show the standards being assessed
+for that particular MA and the current score in those standards.
