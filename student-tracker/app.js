@@ -1,4 +1,4 @@
-// The base URL of our backend server
+// The base URL of backend server
 const API_URL = 'http://localhost:3001/api';
 
 // --- UNIVERSAL CODE ---
@@ -16,7 +16,7 @@ async function runStudentListPage() {
     const searchInput = document.getElementById('searchInput');
     const blockFilter = document.getElementById('blockFilter');
     
-    // Fetch all students from our backend
+    // Fetch students from backend
     const allStudents = await fetch(`${API_URL}/students`).then(res => res.json());
 
     function renderStudents(studentArray) {
@@ -64,8 +64,7 @@ async function runStudentDetailPage() {
     const urlParams = new URLSearchParams(window.location.search);
     const studentId = urlParams.get('id');
 
-    // We still fetch all students, then find the one we need.
-    // A more advanced backend might have an endpoint for a single student.
+    //fetch all students then find the one
     const allStudents = await fetch(`${API_URL}/students`).then(res => res.json());
     const student = allStudents.find(s => s.id === studentId);
 
@@ -106,7 +105,7 @@ async function runStudentDetailPage() {
             const maKey = event.target.dataset.maKey;
             const newStatus = event.target.value;
             
-            // Send the update to our backend
+            // Send the update to  backend
             await fetch(`${API_URL}/students/update-ma`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -116,7 +115,7 @@ async function runStudentDetailPage() {
                     newStatus: newStatus
                 })
             });
-            // You could add a 'Saved!' confirmation message here
+            
         });
     });
 
